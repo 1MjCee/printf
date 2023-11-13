@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				char *string = va_arg(recorded_arguments, char*);
-				int lenstr = strlen(string);
+				int lenstr = _strlen(string);
 				write(1, string, lenstr);
 				letter_counter++;
 			}
@@ -46,12 +46,4 @@ int _printf(const char *format, ...)
 	}
 	va_end(recorded_arguments);
 	return (letter_counter);
-}
-
-int main(void)
-{
-  _printf("hello, %s\n", "Jordan");
-  _printf("sign %%\n");
-  _printf("grade: %c\n", 'A');
-  return (0);
 }
