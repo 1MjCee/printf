@@ -47,11 +47,3 @@ int _printf(const char *format, ...)
 	va_end(recorded_arguments);
 	return (letter_counter);
 }
-
-int main(void)
-{
-  _printf("hello, %s\n", "Jordan");
-  _printf("sign %%\n");
-  _printf("grade: %c\n", 'A');
-  return (0);
-}
