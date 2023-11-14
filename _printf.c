@@ -34,6 +34,18 @@ int _printf(const char *format, ...)
                 case 'i':
                     count += print_integer_i(args);
                     break;
+                case 'u':
+                    count += print_unsigned_integer(args);
+                    break;
+                case 'o':
+                    count += print_octal_integer(args);
+                    break;
+                case 'x':
+                    count += print_hexadecimal_integer(args);
+                    break;
+                case 'X':
+                    count += print_hexadecimal_upper(args);
+                    break;
                 default:
                     /* unsupported specifier, just print the character */
                     count += _putchar('%');
