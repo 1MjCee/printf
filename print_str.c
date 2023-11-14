@@ -3,6 +3,8 @@
 
 int print_str(va_list args)
 {
+    int i;
+    int len;
     char *string = va_arg(args, char *);
 
     if (string == NULL)
@@ -10,12 +12,12 @@ int print_str(va_list args)
         string = "(NULL)";
     }
 
-    int len = _strlen(string);
+    len = _strlen(string);
 
-    for (int i = 0; i < len; ++i)
+    for (i = 0; i < len; ++i)
     {
         _putchar(string[i]);
     }
 
-    return len;
+    return (len);
 }

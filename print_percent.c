@@ -11,7 +11,7 @@ int print_percent(va_list args)
 
     if (_putchar('%') == -1)
     {
-        return (-)1;
+        return (-1);
     }
 
     return (1);
