@@ -9,7 +9,7 @@
 
 int print_hexadecimal_upper(va_list args)
 {
-    int len, i; = 0;
+    int len, i;
     unsigned int hexDigits[8];
 
     unsigned int value = va_arg(args, unsigned int);
@@ -29,7 +29,7 @@ int print_hexadecimal_upper(va_list args)
     }
 
     /* Print uppercase hexadecimal digits in correct order */
-    for (int i = len - 1; i >= 0; --i)
+    for (i = len - 1; i >= 0; --i)
     {
         if (hexDigits[i] < 10)
         {

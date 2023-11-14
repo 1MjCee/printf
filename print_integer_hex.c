@@ -32,7 +32,7 @@ int print_hexadecimal_integer(va_list args)
     }
 
     /* Print hexadecimal digits in correct order */
-    for (int i = len - 1; i >= 0; --i)
+    for (i = len - 1; i >= 0; --i)
     {
         if (hexDigits[i] < 10)
         {

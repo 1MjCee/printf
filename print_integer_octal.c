@@ -32,7 +32,7 @@ int print_octal_integer(va_list args)
     }
 
     /* Print digits in correct order */
-    for (int i = len - 1; i >= 0; --i)
+    for (i = len - 1; i >= 0; --i)
     {
         _putchar(octalDigits[i] + '0');
     }
