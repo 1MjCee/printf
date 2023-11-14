@@ -29,10 +29,10 @@ int _printf(const char *format, ...)
                     count += print_percent(args);
                     break;
                 case 'd':
-                    count += print_int(args);
+                    count += print_integer_d(args);
                     break;
                 case 'i':
-                    count += print_int(args);
+                    count += print_integer_i(args);
                     break;
                 default:
                     /* unsupported specifier, just print the character */

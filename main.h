@@ -12,7 +12,8 @@ int print_char(va_list args);
 int print_str(va_list args);
 int _printf(const char *format, ...);
 int _putchar(char c);
-int print_int(va_list args);
+int print_integer_d(va_list args);
+int print_integer_i(va_list args);
 size_t _strlen(const char *str);
 
 #endif
