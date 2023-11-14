@@ -9,14 +9,15 @@
 
 int print_char(va_list args)
 {
-    char character;
-    character = va_arg(args, int);
+	char character;
 
-    if (character == '\0')
-    {
-        _putchar('\0');
-        return (1);
-    }
-    _putchar(character);
-    return (1);
+	character = va_arg(args, int);
+	if (character == '\0')
+	{
+		_putchar('\0');
+		return (1);
+	}
+	_putchar(character);
+	return (1);
 }
+

@@ -5,13 +5,14 @@
  * @args: arguments list
  * @return: printed %.
  */
+
 int print_percent(va_list args)
 {
-    (void)args;
-
-    if (_putchar('%') == -1)
-    {
-        return (-1);
-    }
-    return (1);
+	(void)args;
+	if (_putchar('%') == -1)
+	{
+		return (-1);
+	}
+	return (1);
 }
+
