@@ -8,7 +8,7 @@
  * @return: Length.
  */
 
-int print_integ(va_list args)
+int print_int(va_list args)
 {
     int num = va_arg(args, int);
     int temp, i, len = 0;

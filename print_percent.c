@@ -13,6 +13,5 @@ int print_percent(va_list args)
     {
         return (-1);
     }
-
     return (1);
 }
