@@ -3,10 +3,15 @@
 /**
  * print_percent - prints %
  * @args: arguments list
- * Return: printed %.
+ * @return: printed %.
  */
 int print_percent(va_list args)
 {
-	(void)args;
-	return (_putchar('%'));
+    (void)args;
+
+    if (_putchar('%') == -1)
+    {
+        return (-1);
+    }
+    return (1);
 }
