@@ -3,25 +3,19 @@
 
 int print_str(va_list args)
 {
-    char *string;
-    int i;
-    int len;
+    char *string = va_arg(args, char *);
 
-    string = va_arg(args, char *);
     if (string == NULL)
     {
         string = "(NULL)";
-        len = _strlen(string);
-        for (i = 0; i < len; i++)
-            _putchar(string[i]);
-        return (len);
     }
-    else
+
+    int len = _strlen(string);
+
+    for (int i = 0; i < len; ++i)
     {
-        len = _strlen(string);
-        for (i = 0; i < len; ++i) {
-            _putchar(string[i]);
-        }
-        return (len);
+        _putchar(string[i]);
     }
+
+    return len;
 }

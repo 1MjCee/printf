@@ -8,5 +8,11 @@
 int print_percent(va_list args)
 {
     (void)args;
-    return (_putchar('%'));
+
+    if (_putchar('%') == -1)
+    {
+        return (-)1;
+    }
+
+    return (1);
 }
