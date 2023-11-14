@@ -2,6 +2,13 @@
 #include <unistd.h>
 #include <string.h>
 
+/**
+ * int _printf - prints formatted string on stdout
+ * @format: string to print,
+ * @...: Accepts many arguments
+ * @return: length of arguments printed.
+ */
+
 int _printf(const char *format, ...)
 {
     va_list args;
@@ -22,6 +29,14 @@ int _printf(const char *format, ...)
     va_end(args);
     return (count);
 }
+
+/**
+ * int process_format_string - processes the format string for printing,
+ * @format: string to print,
+ * @args: list of arguments to be printed,
+ * @count: Number of arguments printed,
+ * @return: pointer to number of arguments printed.
+ */
 
 int process_format_string(const char *format, va_list args, int *count)
 {
