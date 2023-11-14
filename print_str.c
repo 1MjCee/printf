@@ -9,7 +9,7 @@ int print_str(va_list args)
 
     if (string == NULL)
     {
-        string = "(NULL)";
+        return (0);
     }
 
     len = _strlen(string);
