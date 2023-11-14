@@ -7,14 +7,22 @@
  * @return: length of string.
  */
 
-size_t _strlen(const char *str)
+size_t _strlen(const char *string)
 {
-	size_t len = 0;
-	
-	while (*str != '\0')
-	{
-		len++;
-		str++;
-	}
-	return (len);
+    size_t len = 0;
+
+   /* Check for NULL pointer */
+    if (string == NULL)
+    {
+        return (0);
+    }
+
+    /* Increment len while the current character is not '\0' */
+    while (*string != '\0')
+    {
+        len++;
+        string++;
+    }
+
+    return (len);
 }
