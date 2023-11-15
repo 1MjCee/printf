@@ -1,4 +1,3 @@
-#include <limits.h>
 #include <stdarg.h>
 #include "main.h"
 
@@ -11,7 +10,7 @@
 int print_integer_d(va_list args)
 {
     int len, i;
-    long int reversedDigits[20];
+    long int reversedDigits[15];
 
     int num = va_arg(args, int);
 
@@ -42,9 +41,9 @@ int print_integer_d(va_list args)
     for (i = len - 1; i >= 0; --i)
     {
         _putchar(reversedDigits[i] + '0');
-
     }
 
+    len = len + 1;
     return (len);
 }
 
