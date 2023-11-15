@@ -5,7 +5,7 @@
 /**
  * print_int - prints integer to standard output
  * @args: Argument list
- * @return: Length.
+ * Return: Length.
  */
 
 int print_integer_d(va_list args)

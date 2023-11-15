@@ -4,7 +4,7 @@
 /**
  * print_hexadecimal_integer - handles hexadecimal integers for _printf,
  * @args: list of arguments to be printed,
- * @return: Length of hexadecimal integer printed.
+ * Return: Length of hexadecimal integer printed.
  */
 
 int print_hexadecimal_integer(va_list args)

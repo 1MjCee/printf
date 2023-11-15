@@ -5,7 +5,7 @@
 /**
  * print_binary - Converts unsigned integer to binary, the prints it.
  * @args: Argument list
- * @return: Length.
+ * Return: Length.
  */
 
 int print_binary(va_list args)

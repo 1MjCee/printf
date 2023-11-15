@@ -4,7 +4,7 @@
 /**
  * print_hexadecimal_upper - handles hexadecimal upper letters for _printf,
  * @args: list of arguments to be printed,
- * @return: Length of hexadecimal upper case letters printed.
+ * Return: Length of hexadecimal upper case letters printed.
  */
 
 int print_hexadecimal_upper(va_list args)

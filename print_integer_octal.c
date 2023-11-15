@@ -4,7 +4,7 @@
 /**
  * print_octal_integer - handles octal integers for _printf,
  * @args: list of arguments to be printed,
- * @return: Length of octal integer printed.
+ * Return: Length of octal integer printed.
  */
 
 int print_octal_integer(va_list args)

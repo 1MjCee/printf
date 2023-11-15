@@ -5,7 +5,7 @@
 /**
  * print_int_i - Handles %i specifier
  * @args: Argument list
- * @return: Length.
+ * Return: Length.
  */
 
 int print_integer_i(va_list args)

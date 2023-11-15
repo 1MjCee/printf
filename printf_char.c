@@ -4,7 +4,7 @@
 /**
  * print_char - prints a character
  * @args: Argument list
- * @return: 0.
+ * Return: 0.
  */
 
 int print_char(va_list args)

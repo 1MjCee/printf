@@ -3,8 +3,8 @@
 
 /**
  * _strlen - calculates the length of a string,
- * @str: String whose length to be calculated,
- * @return: length of string.
+ * @string: String whose length to be calculated,
+ * Return: length of string.
  */
 
 size_t _strlen(const char *string)

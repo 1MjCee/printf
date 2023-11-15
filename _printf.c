@@ -6,7 +6,7 @@
  * int _printf - prints formatted string on stdout
  * @format: string to print,
  * @...: Accepts many arguments
- * @return: length of arguments printed.
+ * Return: length of arguments printed.
  */
 
 int _printf(const char *format, ...)
@@ -35,7 +35,7 @@ int _printf(const char *format, ...)
  * @format: string to print,
  * @args: list of arguments to be printed,
  * @count: Number of arguments printed,
- * @return: pointer to number of arguments printed.
+ * Return: pointer to number of arguments printed.
  */
 
 int process_format_string(const char *format, va_list args, int *count)

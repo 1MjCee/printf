@@ -4,7 +4,7 @@
 /**
  * print_unsigned_integer - handles unsigned integer for _printif,
  * @args: List of arguments to be printed,
- * @return: length of printed unsigned integers.
+ * Return: length of printed unsigned integers.
  */
 
 int print_unsigned_integer(va_list args)

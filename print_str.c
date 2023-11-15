@@ -1,6 +1,12 @@
 #include <stdarg.h>
 #include "main.h"
 
+/**
+ * print_str - handles a string
+ * @args: argument list,
+ * Return: length of the string.
+ */
+
 int print_str(va_list args)
 {
 	int len, i;

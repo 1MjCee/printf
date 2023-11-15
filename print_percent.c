@@ -3,7 +3,7 @@
 /**
  * print_percent - prints %
  * @args: arguments list
- * @return: printed %.
+ * Return: printed %.
  */
 
 int print_percent(va_list args)
