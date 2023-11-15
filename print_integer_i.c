@@ -19,7 +19,7 @@ int print_integer_i(va_list args)
     if (value == 0)
     {
         _putchar('0');
-        return 1;
+        return (1);
     }
 
     /* Handle negative numbers */
@@ -47,6 +47,6 @@ int print_integer_i(va_list args)
         _putchar(reversedDigits[i] + '0');
     }
 
-    return len;
+    return (len);
 }
 
