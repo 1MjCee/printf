@@ -74,6 +74,9 @@ int process_format_string(const char *format, va_list args, int *count)
                 case 'X':
                     *count += print_hexadecimal_upper(args);
                     break;
+                case 'b':
+                    *count += print_binary(args);
+                    break;
                 default:
                     /* unsupported specifier, print an error message or handle it in a specific way */
                     *count += _putchar('%');
