@@ -5,7 +5,6 @@
 /**
  * int _printf - prints formatted string on stdout
  * @format: string to print,
- * @...: Accepts many arguments
  * Return: length of arguments printed.
  */
 
@@ -34,7 +33,7 @@ int _printf(const char *format, ...)
  * int process_format_string - processes the format string for printing,
  * @format: string to print,
  * @args: list of arguments to be printed,
- * @count: Number of arguments printed,
+ * @count: Number of arguments to be printed,
  * Return: pointer to number of arguments printed.
  */
 
@@ -76,6 +75,9 @@ int process_format_string(const char *format, va_list args, int *count)
                     break;
                 case 'b':
                     *count += print_binary(args);
+                    break;
+                case 'S':
+                    *count += print_ascii_char(args);
                     break;
                 default:
                     /* unsupported specifier, print an error message or handle it in a specific way */

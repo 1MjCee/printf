@@ -20,5 +20,7 @@ int print_octal_integer(va_list args);
 int print_hexadecimal_integer(va_list args);
 int print_hexadecimal_upper(va_list args);
 int print_binary(va_list args);
+int print_value_hex(int value);
+int print_ascii_char(va_list args);
 
 #endif

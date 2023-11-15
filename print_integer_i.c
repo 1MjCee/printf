@@ -10,10 +10,10 @@
 
 int print_integer_i(va_list args)
 {
-    int len, i;
+    int len, i, value;
     int reversedDigits[11];
 
-    int value = va_arg(args, int);
+    value = va_arg(args, int);
 
     /* Handle zero case */
     if (value == 0)
