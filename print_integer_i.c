@@ -10,44 +10,43 @@
 
 int print_integer_i(va_list args)
 {
-    int len, digits, i;
+    int len, i;
     int reversedDigits[11];
 
-    int num = va_arg(args, int);
+    int value = va_arg(args, int);
 
-    /* Handle the case of zero */
-    if (num == 0)
+    /* Handle zero case */
+    if (value == 0)
     {
         _putchar('0');
-        return (1);
+        return 1;
     }
 
-    /* initialize len and num of digits to zero*/
-    len = 0;
-    digits = 0;
-
     /* Handle negative numbers */
-    if (num < 0)
+    if (value < 0)
     {
         _putchar('-');
+        value = -value;
         len = 1;
-        num = -num;
+    }
+    else
+    {
+        len = 0;
     }
 
     /* Extract digits in reverse order */
-    while (num > 0)
+    while (value > 0)
     {
-        reversedDigits[digits++] = num % 10;
-        num /= 10;
+        reversedDigits[len++] = value % 10;
+        value /= 10;
     }
 
     /* Print digits in correct order */
-    for (i = digits - 1; i >= 0; --i)
+    for (i = len - 1; i >= 0; --i)
     {
         _putchar(reversedDigits[i] + '0');
     }
 
-    len = len + digits;
-    return (len);
+    return len;
 }
 

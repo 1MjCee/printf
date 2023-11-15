@@ -10,7 +10,7 @@
 
 int print_integer_d(va_list args)
 {
-    int len, char_len, i;
+    int len, i;
     long int reversedDigits[20];
 
     int num = va_arg(args, int);
@@ -23,16 +23,13 @@ int print_integer_d(va_list args)
     }
 
     len = 0;
-    char_len = 0;
 
     /*Handling negative numbers*/
     if (num < 0)
     {
         _putchar('-');
-        char_len++;
         num = -num;
     }
-
 
     /* Extract digits in reverse order */
     while (num > 0)
@@ -45,8 +42,13 @@ int print_integer_d(va_list args)
     for (i = len - 1; i >= 0; --i)
     {
         _putchar(reversedDigits[i] + '0');
+
     }
 
-    len += char_len;
     return (len);
 }
+
+
+
+
+
