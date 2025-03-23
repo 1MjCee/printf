@@ -1,10 +1,10 @@
 #include <stdarg.h>
-#include <stdio.h>
 #include <string.h>
+#include "main.h"
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int count, i;
+	int count, i, d;
 	char sc;
 	char *df;
 
@@ -20,23 +20,28 @@ int _printf(const char *format, ...)
 			switch(sc)
 			{
 				case 'c':
-					printf("%c", va_arg(args, int));
+					_putchar(va_arg(args, int));
 					count++;
 					break;
 				case 's':
 					df = va_arg(args, char *);
-					printf("%s", df);
+					d = 0;
+					while(d < (int)strlen(df))
+					{
+						_putchar(df[d]);
+						d++;
+					}
 					count = count + strlen(df);
 					break;
 				case '%':
-					printf("%%");
+					_putchar('%');
 					count++;
 					break;
 			}
 		}
 		else
 		{
-			printf("%c", format[i]);
+			_putchar(format[i]);
 			count++;
 		}
 		i++;
