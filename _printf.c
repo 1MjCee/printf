@@ -1,5 +1,3 @@
-#include <stdarg.h>
-#include <string.h>
 #include "main.h"
 int _printf(const char *format, ...)
 {
